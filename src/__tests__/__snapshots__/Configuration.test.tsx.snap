@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Configuration Page Should render the configuration page 1`] = `
+<div>
+  <div
+    class="css-p926h6"
+  >
+    <div
+      class="css-1ofqig9"
+    >
+      <p
+        class="chakra-text css-apa3a6"
+      >
+        Vamos começar!
+      </p>
+      <form>
+        <div
+          class="css-2ygrde"
+        >
+          <input
+            class="chakra-input css-1ogvq64"
+            placeholder="Insira os nomes dos participantes"
+            value=""
+          />
+          <button
+            class="chakra-button css-141od45"
+            disabled=""
+            type="submit"
+          >
+            Adicionar
+          </button>
+        </div>
+      </form>
+      <ul
+        class="css-tu0njr"
+        role="list"
+      />
+      <div
+        class="css-yr5sba"
+      >
+        <button
+          class="chakra-button css-grdcky"
+          disabled=""
+          type="button"
+        >
+          Iniciar brincadeira!
+        </button>
+        <img
+          alt="Bags"
+          class="chakra-image css-0"
+          src="bags.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
