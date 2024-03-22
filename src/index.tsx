@@ -1,4 +1,4 @@
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, Flex } from '@chakra-ui/react';
 import { App } from './App';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -10,8 +10,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ChakraProvider>
-      <Header />
-      <App />
+      <Flex direction="column" h="100vh" w="100vw" bg='#4B69FD'>
+        <Header />
+        <App />
+      </Flex>
     </ChakraProvider>
   </React.StrictMode>
 );

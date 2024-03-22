@@ -1,6 +1,7 @@
 import { useAddParticipant, useErrorMessage } from '../state';
 import { Button, Input, Text } from '@chakra-ui/react';
 import { ChangeEvent, useRef, useState } from 'react';
+import { Card } from './Card';
 
 export const UserForm = () => {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -21,17 +22,19 @@ export const UserForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <Input
-        ref={inputRef}
-        value={participantName}
-        onChange={handleChange}
-        placeholder="Insira os nomes dos participantes"
-      />
-      <Button type="submit" isDisabled={!participantName}>
-        Adicionar participante
-      </Button>
-      {errorMessage && <Text role="alert">{errorMessage}</Text>}
-    </form>
+    <Card>
+      <form onSubmit={handleSubmit}>
+        <Input
+          ref={inputRef}
+          value={participantName}
+          onChange={handleChange}
+          placeholder="Insira os nomes dos participantes"
+        />
+        <Button type="submit" isDisabled={!participantName}>
+          Adicionar participante
+        </Button>
+        {errorMessage && <Text role="alert">{errorMessage}</Text>}
+      </form>
+    </Card>
   );
 };
