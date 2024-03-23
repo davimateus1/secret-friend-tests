@@ -13,7 +13,7 @@ export const Card = ({ children, ...props }: CardProps) => {
       w="100%"
       mt={{ base: '-1.9rem', md: '-2.3rem' }}
       boxSizing="border-box"
-      backgroundColor="#FFF9EB"
+      backgroundColor="brand.700"
       border="2px solid black"
       borderRadius="6rem 6rem 0 0"
       justifyContent="center"

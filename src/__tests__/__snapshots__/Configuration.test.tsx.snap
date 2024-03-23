@@ -3,13 +3,13 @@
 exports[`Configuration Page Should render the configuration page 1`] = `
 <div>
   <div
-    class="css-p926h6"
+    class="css-1ne9sec"
   >
     <div
       class="css-1ofqig9"
     >
       <p
-        class="chakra-text css-apa3a6"
+        class="chakra-text css-vtxltj"
       >
         Vamos começar!
       </p>
@@ -23,7 +23,7 @@ exports[`Configuration Page Should render the configuration page 1`] = `
             value=""
           />
           <button
-            class="chakra-button css-141od45"
+            class="chakra-button css-13fehna"
             disabled=""
             type="submit"
           >
@@ -39,7 +39,7 @@ exports[`Configuration Page Should render the configuration page 1`] = `
         class="css-yr5sba"
       >
         <button
-          class="chakra-button css-grdcky"
+          class="chakra-button css-1uyux1n"
           disabled=""
           type="button"
         >

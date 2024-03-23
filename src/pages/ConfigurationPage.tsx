@@ -10,7 +10,7 @@ export const ConfigurationPage = () => {
           fontSize="4xl"
           textAlign="center"
           mb="3rem"
-          color="#4B69FD"
+          color="brand.900"
         >
           Vamos começar!
         </Text>

@@ -3,8 +3,10 @@ import { Footer } from '../components';
 import { useParticipantsList } from '../state';
 import { fireEvent, render, screen } from '@testing-library/react';
 
+const mockSort = jest.fn();
+
 jest.mock('../state', () => {
-  return { useParticipantsList: jest.fn() };
+  return { useParticipantsList: jest.fn(), useSort: () => mockSort };
 });
 
 const mockNavigation = jest.fn();
@@ -56,5 +58,6 @@ describe('Where exists enough participants', () => {
 
     expect(mockNavigation).toHaveBeenCalled();
     expect(mockNavigation).toHaveBeenCalledWith('/sorteio');
+    expect(mockSort).toHaveBeenCalledTimes(1);
   });
 });

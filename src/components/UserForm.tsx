@@ -36,10 +36,10 @@ export const UserForm = () => {
           h="6rem"
           w="100%"
           boxSizing="border-box"
-          pl="3rem"
-          fontSize="2xl"
-          boxShadow="0px 2px 0px 1px black;"
           _focus={{ outline: 'none' }}
+          pl={{ base: '1rem', md: '3rem' }}
+          boxShadow="0px 2px 0px 1px black;"
+          fontSize={{ base: 'sm', md: '2xl' }}
           display={{ base: 'block', md: 'flex' }}
           borderRadius={{ base: '4rem', md: '4rem 0 0 4rem' }}
           mb={{ base: '1rem', md: '0' }}
@@ -52,11 +52,10 @@ export const UserForm = () => {
           boxSizing="border-box"
           border="2px solid black"
           fontSize="2xl"
-
           color="black"
           boxShadow="2px 2px 0px 1px black"
           cursor="pointer"
-          bg="#c4c4c4"
+          bg="brand.600"
           _hover={{ opacity: 0.8 }}
           _disabled={{ opacity: 0.6, cursor: 'not-allowed' }}
           borderRadius={{ base: '4rem', md: '0 4rem 4rem 0' }}
@@ -67,11 +66,11 @@ export const UserForm = () => {
       {errorMessage && (
         <Text
           role="alert"
-          color="#842029"
-          bg="#f8d7da"
+          color="brand.300"
+          bg="brand.500"
           p="1rem"
           borderRadius="md"
-          border="1px solid #f5c2c7"
+          border="1px solid brand.400"
           m={{ base: '4rem 0', md: '0' }}
         >
           {errorMessage}

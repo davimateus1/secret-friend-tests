@@ -16,7 +16,7 @@ root.render(
         direction="column"
         h="100vh"
         w="100vw"
-        bg="#4B69FD"
+        bg="brand.900"
         overflowY="auto"
         sx={{ ...ScrollbarStyle }}
       >

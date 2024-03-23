@@ -9,7 +9,7 @@ export const Header = () => {
     <Flex
       pt={{ base: '4rem', md: '8rem' }}
       align="center"
-      bg="#4B69FD"
+      bg="brand.900"
       justify={{ base: 'center', md: 'space-around' }}
       direction={{ base: 'column', md: 'row' }}
     >
