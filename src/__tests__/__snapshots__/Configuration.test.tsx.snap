@@ -18,7 +18,7 @@ exports[`Configuration Page Should render the configuration page 1`] = `
           class="css-2ygrde"
         >
           <input
-            class="chakra-input css-1ogvq64"
+            class="chakra-input css-1jda5v6"
             placeholder="Insira os nomes dos participantes"
             value=""
           />
@@ -36,7 +36,7 @@ exports[`Configuration Page Should render the configuration page 1`] = `
         role="list"
       />
       <div
-        class="css-yr5sba"
+        class="css-neqxv"
       >
         <button
           class="chakra-button css-1uyux1n"

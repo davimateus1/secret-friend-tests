@@ -18,7 +18,7 @@ export const Footer = () => {
   return (
     <Flex
       align="center"
-      justify="space-between"
+      justify="space-evenly"
       direction={{ base: 'column', md: 'row' }}
     >
       <Button

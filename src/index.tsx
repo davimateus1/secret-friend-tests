@@ -19,6 +19,7 @@ root.render(
         bg="brand.900"
         overflowY="auto"
         sx={{ ...ScrollbarStyle }}
+        border="3px solid black"
       >
         <Header />
         <App />
