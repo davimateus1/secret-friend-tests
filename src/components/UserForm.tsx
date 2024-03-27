@@ -43,6 +43,7 @@ export const UserForm = () => {
           display={{ base: 'block', md: 'flex' }}
           borderRadius={{ base: '4rem', md: '4rem 0 0 4rem' }}
           mb={{ base: '1rem', md: '0' }}
+          id="add-participant-input"
         />
         <Button
           type="submit"
@@ -59,6 +60,7 @@ export const UserForm = () => {
           _hover={{ opacity: 0.8 }}
           _disabled={{ opacity: 0.6, cursor: 'not-allowed' }}
           borderRadius={{ base: '4rem', md: '0 4rem 4rem 0' }}
+          id="add-participant-button"
         >
           Adicionar
         </Button>

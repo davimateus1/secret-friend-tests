@@ -10,6 +10,7 @@ export const ParticipantsList = () => {
       flexDir="column"
       justifyContent="center"
       alignItems="center"
+      id="participants-list"
     >
       {participants.map((participant) => (
         <ListItem key={participant} listStyleType="none">

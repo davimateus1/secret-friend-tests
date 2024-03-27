@@ -35,6 +35,7 @@ export const Footer = () => {
         boxShadow="2px 2px 0px 1px black"
         w={{ base: '21rem', md: '30rem' }}
         _disabled={{ opacity: 0.6, cursor: 'not-allowed' }}
+        id="start-button"
       >
         Iniciar brincadeira!
       </Button>

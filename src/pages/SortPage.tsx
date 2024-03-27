@@ -78,6 +78,7 @@ export const SortPage = () => {
             _hover={{ bg: 'brand.900' }}
             boxShadow="2px 2px 0px 1px black"
             _disabled={{ opacity: 0.6, cursor: 'not-allowed' }}
+            id="sort-button"
           >
             Sortear
           </Button>
@@ -88,6 +89,7 @@ export const SortPage = () => {
             fontWeight="500"
             color="brand.800"
             textAlign="center"
+            id="sort-result"
           >
             {secretFriend ? `Seu amigo secreto é: ${secretFriend}` : ''}
           </Text>

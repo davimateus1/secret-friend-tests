@@ -19,12 +19,14 @@ exports[`Configuration Page Should render the configuration page 1`] = `
         >
           <input
             class="chakra-input css-1jda5v6"
+            id="add-participant-input"
             placeholder="Insira os nomes dos participantes"
             value=""
           />
           <button
             class="chakra-button css-13fehna"
             disabled=""
+            id="add-participant-button"
             type="submit"
           >
             Adicionar
@@ -32,7 +34,8 @@ exports[`Configuration Page Should render the configuration page 1`] = `
         </div>
       </form>
       <ul
-        class="css-tu0njr"
+        class="css-hw3umf"
+        id="participants-list"
         role="list"
       />
       <div
@@ -41,6 +44,7 @@ exports[`Configuration Page Should render the configuration page 1`] = `
         <button
           class="chakra-button css-1uyux1n"
           disabled=""
+          id="start-button"
           type="button"
         >
           Iniciar brincadeira!
