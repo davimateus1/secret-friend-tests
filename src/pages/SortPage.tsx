@@ -1,11 +1,21 @@
 import { Card } from '../components';
 import Airplane from '../assets/airplane.png';
-import { ChangeEvent, FormEvent, useState } from 'react';
+
+import {
+  ChangeEvent,
+  FormEvent,
+  useCallback,
+  useEffect,
+  useState,
+} from 'react';
+
+import { useNavigate } from 'react-router-dom';
 import { useParticipantsList, useSortResult } from '../state';
 import { Button, Flex, Image, Select, Text } from '@chakra-ui/react';
 
 export const SortPage = () => {
   const result = useSortResult();
+  const navigate = useNavigate();
   const participants = useParticipantsList();
 
   const [secretFriend, setSecretFriend] = useState('');
@@ -20,9 +30,21 @@ export const SortPage = () => {
     }
   };
 
+  const storeResult = useCallback(() => {
+    const resultObj = Object.fromEntries(result);
+    const resultJSON = JSON.stringify(resultObj);
+
+    localStorage.setItem('result', resultJSON);
+  }, [result]);
+
   const handleChangeParticipant = (e: ChangeEvent<HTMLSelectElement>) => {
     setActualParticipant(e.target.value);
   };
+
+  useEffect(() => {
+    if (result.size) return storeResult();
+    navigate('/');
+  }, [result, participants, storeResult, navigate]);
 
   return (
     <Card>

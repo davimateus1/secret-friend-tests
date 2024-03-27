@@ -2,6 +2,7 @@ import { RecoilRoot } from 'recoil';
 import { SortPage } from '../pages';
 import { useParticipantsList, useSortResult } from '../state';
 import { fireEvent, render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 
 jest.mock('../state', () => {
   return { useParticipantsList: jest.fn(), useSortResult: jest.fn() };
@@ -23,14 +24,26 @@ describe('Sort Page', () => {
   });
 
   it('Should be able to view the your secret friend', () => {
-    render(<SortPage />, { wrapper: RecoilRoot });
+    render(
+      <MemoryRouter>
+        <RecoilRoot>
+          <SortPage />
+        </RecoilRoot>
+      </MemoryRouter>
+    );
 
     const options = screen.queryAllByRole('option');
     expect(options).toHaveLength(participants.length + disabledOption.length);
   });
 
   it('Should be able to show requested participant', () => {
-    render(<SortPage />, { wrapper: RecoilRoot });
+    render(
+      <MemoryRouter>
+        <RecoilRoot>
+          <SortPage />
+        </RecoilRoot>
+      </MemoryRouter>
+    );
 
     const select = screen.getByTestId('select-participant');
     fireEvent.change(select, { target: { value: participants[0] } });

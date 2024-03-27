@@ -73,6 +73,7 @@ export const UserForm = () => {
           p="1rem"
           borderRadius="md"
           border="1px solid brand.400"
+          id="error-message"
           m={{ base: '4rem 0', md: '0' }}
         >
           {errorMessage}
